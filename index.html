@@ -1,52 +1,415 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Ali Taha</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <title>Ali Taha</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
-  .fakeimg {
-    height: 200px;
-    background: #aaa;
-  }
+    .left {
+      width: 50%;
+      position: absolute;
+      left: 0px;
+      height: 100%;
+      overflow: hidden;
+      object-fit: cover;
+    }
+
+    .right {
+
+      width: 50%;
+      position: absolute;
+      right: 0px;
+      height: 100%;
+    }
   </style>
 </head>
+
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="d-flex flex-grow-1">
-          <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
-          <a class="navbar-brand text-primary" href="#" >
-                Ali Taha
-          </a>
-          <div class="w-100 text-right">
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-          </div>
+  <img src="IMG_3894.jpg" class="left">
+  <div class="right">
+    <div class="jumbotron jumbotron-fluid mx-lg-1 px-xl-5" style="background-color:#FFFFFF">
+      <div class="container-fluid" height="100%">
+
+            <h1 class="display-3 text-primary" style="padding-top: 2vh;">Hi, I'm Ali!</h1>
+            <p class="lead blue-text"> I am an engineer with a background in computer science
+              and computer engineering. I enjoy thinking about hard problems and actualizing my ideas as 
+              products. Outside work I enjoy Hiking, BJJ, and volunteering as a teacher.
+            </p>
+
+
+            <h2 class="display-5 text-primary" style="">Education</h2>
+            <div class="accordion accordion-flush" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneE"
+                    aria-expanded="false" aria-controls="collapseOneE">
+                    <div class="row" style="height: 5vh;">
+                      <div class="col align-self-center">
+                        <a href="https://www.cornell.edu/">
+                          <img src="cornell.png" class = "img-fluid">
+                        </a>
+                      </div>
+                      <div class="col">
+                      </div>
+                      <div class="col">
+                      </div>
+                      <div class="col">
+                      </div>
+                    </div>
+                  </button>
+                </h2>
+                <div id="collapseOneE" class="accordion-collapse collapse collapsed" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>BS Electrical and Computer Engineering, BS Computer Science</strong> I completed my undergraduate education at Cornell.
+                    I let myself wander during undergraduate years, because it seemed like it would be a good time to do so. I took classes across multiple areas, spanning 
+                    physics, electrical engineering, machine learning, computer architecture, compilers, evolutionary biology, and game theory. I was a TA for <emph>Principals of Large Scale Machine Learning</emph> and <emph>Electromagnetics</emph>. I was part ofresearch
+                    groups with <a href="https://www.aep.cornell.edu/faculty-directory/peter-mcmahon">Professor McMahon</a>, <a href="https://www.ece.cornell.edu/faculty-directory/francesco-monticone">Professor Monticone</a>, and <a href="https://www.engineering.cornell.edu/faculty-directory/zhiru-zhang">Professor Zhang.</a> I was part of the Cornell BJJ Club, the Cornell Maker Club, and Cornell Autobike!
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwoE" aria-expanded="false" aria-controls="collapseTwoE">
+
+                    <div class="row" style="height: 4vh;">
+                      <div class="col align-self-center">
+                        <a href="https://stuy.enschool.org/">
+                          <img src="stuyvesant.png" class="img-fluid">
+                        </a>
+                      </div>
+                      <div class="col">
+                      </div>
+                      <div class="col">
+                      </div>
+                    </div>
+
+                  </button>
+                </h2>
+                <div id="collapseTwoE" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Advanced Regents Diploma</strong> I was on StuyPulse and Model UN. I learned about how time is the most scarce resource of all.
+                     It was a fun time :)
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <h2 class="display-5 text-primary" style=" padding-top: 2vh;">Experience</h2>
+            <div class="accordion accordion-flush" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="false" aria-controls="collapseOne">
+                    <div class="row" style=" width : 100%; height: 4vh; padding: 0; margin: 0;">
+                      <div class="col align-self-center">
+                        <a href="https://dwellwell.ai/">
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xmlns:serif="http://www.serif.com/" class ="img-fluid"   viewBox="0 0 1540 236"
+                            version="1.1" xml:space="preserve"
+                            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                            <g>
+                              <g transform="matrix(1.16056,0,0,1.16056,-116.242,-202.634)">
+                                <path
+                                  d="M150.16,236.141C150.16,224.252 140.508,214.6 128.619,214.6L121.701,214.6C109.812,214.6 100.16,224.252 100.16,236.141L100.16,353.059C100.16,364.948 109.812,374.6 121.701,374.6L128.619,374.6C140.508,374.6 150.16,364.948 150.16,353.059L150.16,236.141Z"
+                                  style="fill:rgb(252,189,42);" />
+                              </g>
+                              <g transform="matrix(1.16056,0,0,1.16056,-116.242,-202.634)">
+                                <path
+                                  d="M310.16,236.141C310.16,224.252 300.508,214.6 288.619,214.6L281.701,214.6C269.812,214.6 260.16,224.252 260.16,236.141L260.16,353.059C260.16,364.948 269.812,374.6 281.701,374.6L288.619,374.6C300.508,374.6 310.16,364.948 310.16,353.059L310.16,236.141Z"
+                                  style="fill:rgb(105,109,179);" />
+                              </g>
+                              <g transform="matrix(1.16056,0,0,1.16056,-116.242,-202.634)">
+                                <path
+                                  d="M230.16,196.141C230.16,184.252 220.508,174.6 208.619,174.6L201.701,174.6C189.812,174.6 180.16,184.252 180.16,196.141L180.16,313.059C180.16,324.948 189.812,334.6 201.701,334.6L208.619,334.6C220.508,334.6 230.16,324.948 230.16,313.059L230.16,196.141Z"
+                                  style="fill:rgb(239,67,64);" />
+                              </g>
+                            </g>
+                            <g>
+                              <g transform="matrix(1.16056,0,0,1.16056,-116.242,-202.634)">
+                                <path
+                                  d="M441.19,214.58C494.68,214.58 525.02,243.35 525.02,294.59C525.02,345.83 494.68,374.6 441.19,374.6L389.95,374.6L389.95,214.58L441.19,214.58ZM416.69,351.23L440.74,351.23C478.05,351.23 497.15,331.9 497.15,294.59C497.15,257.28 478.05,237.95 440.74,237.95L416.69,237.95L416.69,351.23Z"
+                                  style="fill:rgb(1,1,1);fill-rule:nonzero;" />
+                              </g>
+                              <g transform="matrix(1.16056,0,0,1.16056,-116.242,-202.634)">
+                                <path
+                                  d="M646.15,374.6L634.46,327.4C630.41,311.22 626.82,294.81 623.45,278.18L623,278.18C619.63,294.81 616.03,311.22 611.99,327.4L600.3,374.6L563.67,374.6L535.8,260.43L561.42,260.43L571.76,306.28C575.58,322.91 579.18,340.22 582.1,356.85L582.55,356.85C585.92,340.22 589.74,323.81 593.79,307.18L605.25,260.43L641.21,260.43L652.67,307.18C656.72,323.81 660.54,340.22 663.91,356.85L664.36,356.85C667.28,340.22 670.88,322.91 674.7,306.28L685.04,260.43L710.66,260.43L682.79,374.6L646.15,374.6Z"
+                                  style="fill:rgb(1,1,1);fill-rule:nonzero;" />
+                              </g>
+                              <g transform="matrix(1.16056,0,0,1.16056,-116.242,-202.634)">
+                                <path
+                                  d="M801.46,340.21L827.75,340.21C823.48,360.66 805.05,377.97 775.16,377.97C740.33,377.97 719.87,353.02 719.87,316.16C719.87,282.45 740.1,257.05 774.71,257.05C800.78,257.05 819.66,272.11 825.95,295.93C828.2,303.12 829.1,311.66 829.1,322.67L745.27,322.67C746.17,348.52 759.2,359.08 775.16,359.08C789.77,359.08 799.21,351.21 801.46,340.2L801.46,340.21ZM745.72,305.82L803.48,305.82C801.68,285.82 790,275.93 774.71,275.93C759.42,275.93 747.96,286.04 745.72,305.82Z"
+                                  style="fill:rgb(1,1,1);fill-rule:nonzero;" />
+                              </g>
+                              <g transform="matrix(1.16056,0,0,1.16056,-116.242,-202.634)">
+                                <rect x="854.5" y="214.58" width="25.62" height="160.02"
+                                  style="fill:rgb(1,1,1);fill-rule:nonzero;" />
+                              </g>
+                              <g transform="matrix(1.16056,0,0,1.16056,-116.242,-202.634)">
+                                <rect x="913.38" y="214.58" width="25.62" height="160.02"
+                                  style="fill:rgb(1,1,1);fill-rule:nonzero;" />
+                              </g>
+                              <g transform="matrix(1.16056,0,0,1.16056,-116.242,-202.634)">
+                                <path
+                                  d="M1067.56,374.6L1055.87,327.4C1051.82,311.22 1048.23,294.81 1044.86,278.18L1044.41,278.18C1041.04,294.81 1037.44,311.22 1033.4,327.4L1021.71,374.6L985.08,374.6L957.21,260.43L982.83,260.43L993.17,306.28C996.99,322.91 1000.59,340.22 1003.51,356.85L1003.96,356.85C1007.33,340.22 1011.15,323.81 1015.2,307.18L1026.66,260.43L1062.62,260.43L1074.08,307.18C1078.12,323.81 1081.95,340.22 1085.32,356.85L1085.77,356.85C1088.69,340.22 1092.29,322.91 1096.11,306.28L1106.45,260.43L1132.07,260.43L1104.2,374.6L1067.56,374.6Z"
+                                  style="fill:rgb(1,1,1);fill-rule:nonzero;" />
+                              </g>
+                              <g transform="matrix(1.16056,0,0,1.16056,-116.242,-202.634)">
+                                <path
+                                  d="M1222.86,340.21L1249.16,340.21C1244.89,360.66 1226.46,377.97 1196.57,377.97C1161.73,377.97 1141.28,353.02 1141.28,316.16C1141.28,282.45 1161.51,257.05 1196.12,257.05C1222.19,257.05 1241.07,272.11 1247.36,295.93C1249.61,303.12 1250.51,311.66 1250.51,322.67L1166.68,322.67C1167.58,348.52 1180.61,359.08 1196.57,359.08C1211.18,359.08 1220.62,351.21 1222.86,340.2L1222.86,340.21ZM1167.12,305.82L1224.88,305.82C1223.08,285.82 1211.39,275.93 1196.11,275.93C1180.83,275.93 1169.36,286.04 1167.12,305.82Z"
+                                  style="fill:rgb(1,1,1);fill-rule:nonzero;" />
+                              </g>
+                              <g transform="matrix(1.16056,0,0,1.16056,-116.242,-202.634)">
+                                <rect x="1275.9" y="214.58" width="25.62" height="160.02"
+                                  style="fill:rgb(1,1,1);fill-rule:nonzero;" />
+                              </g>
+                              <g transform="matrix(1.16056,0,0,1.16056,-116.242,-202.634)">
+                                <rect x="1334.78" y="214.58" width="25.62" height="160.02"
+                                  style="fill:rgb(1,1,1);fill-rule:nonzero;" />
+                              </g>
+                            </g>
+                            <g>
+                              <g transform="matrix(1.16056,0,0,1.16056,-116.242,-202.634)">
+                                <path
+                                  d="M1399.16,216.33L1399.16,232.71L1396.74,232.71L1396.74,216.33L1390.42,216.33L1390.42,214.2L1405.47,214.2L1405.47,216.33L1399.15,216.33L1399.16,216.33Z"
+                                  style="fill:rgb(1,1,1);fill-rule:nonzero;" />
+                              </g>
+                              <g transform="matrix(1.16056,0,0,1.16056,-116.242,-202.634)">
+                                <path
+                                  d="M1424.72,232.71L1424.72,223.3C1424.72,220.96 1424.75,218.59 1424.77,216.23L1424.72,216.23C1423.91,218.6 1423.06,220.94 1422.2,223.3L1418.77,232.71L1416.01,232.71L1412.58,223.3C1411.72,220.93 1410.86,218.59 1410.06,216.23L1410.01,216.23C1410.04,218.6 1410.06,220.96 1410.06,223.3L1410.06,232.71L1407.72,232.71L1407.72,214.2L1411.57,214.2L1414.92,223.33C1415.75,225.67 1416.58,228.09 1417.36,230.43L1417.41,230.43C1418.19,228.09 1419.02,225.67 1419.85,223.33L1423.18,214.2L1427.06,214.2L1427.06,232.71L1424.72,232.71Z"
+                                  style="fill:rgb(1,1,1);fill-rule:nonzero;" />
+                              </g>
+                            </g>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="col">
+                      </div>
+                      <div class="col">
+                      </div>
+                    </div>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Consultant</strong> I developed algorithms for the detection of HVAC system faults using sensor data and led the development of data 
+                    pipelines used to train machine learning models used in these algorithms. The work led to a patent: PCT/US2023/011880. 
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+
+                    <div class="row" style=" width : 100%; height: 4vh; padding: 0; margin: 0;">
+                      <div class="col align-self-center">
+                        <a href="https://www.amazon.com/">
+                          <svg height="3vh"  viewBox="163.5 263.1 285 85.8"  xmlns="http://www.w3.org/2000/svg">
+                            <g clip-rule="evenodd" fill-rule="evenodd">
+                              <path
+                                d="m340.3 330.2c-16.5 12.2-40.5 18.7-61.2 18.7-29 0-55-10.7-74.8-28.5-1.5-1.4-.2-3.3 1.7-2.2 21.3 12.4 47.6 19.8 74.8 19.8 18.3 0 38.5-3.8 57.1-11.7 2.8-1.1 5.1 1.9 2.4 3.9z"
+                                fill="#f90" />
+                              <path
+                                d="m347.2 322.3c-2.1-2.7-14-1.3-19.3-.6-1.6.2-1.9-1.2-.4-2.2 9.5-6.7 25-4.7 26.8-2.5s-.5 17.8-9.4 25.2c-1.4 1.1-2.7.5-2.1-1 2-5 6.5-16.1 4.4-18.9z"
+                                fill="#f90" />
+                              <path
+                                d="m328.2 272.5v-6.5c0-1 .7-1.6 1.6-1.6h29c.9 0 1.7.7 1.7 1.6v5.5c0 .9-.8 2.1-2.2 4.1l-15 21.4c5.6-.1 11.5.7 16.5 3.5 1.1.6 1.4 1.6 1.5 2.5v6.9c0 1-1 2.1-2.1 1.5-8.9-4.7-20.8-5.2-30.6.1-1 .5-2.1-.5-2.1-1.5v-6.6c0-1 0-2.8 1.1-4.4l17.4-24.9h-15.1c-.9 0-1.7-.7-1.7-1.6zm-105.7 40.3h-8.8c-.8-.1-1.5-.7-1.6-1.5v-45.2c0-.9.8-1.6 1.7-1.6h8.2c.9 0 1.5.7 1.6 1.5v5.9h.2c2.1-5.7 6.2-8.4 11.6-8.4 5.5 0 9 2.7 11.4 8.4 2.1-5.7 7-8.4 12.2-8.4 3.7 0 7.7 1.5 10.2 5 2.8 3.8 2.2 9.3 2.2 14.2v28.6c0 .9-.8 1.6-1.7 1.6h-8.7c-.9-.1-1.6-.8-1.6-1.6v-24c0-1.9.2-6.7-.2-8.5-.7-3-2.6-3.9-5.2-3.9-2.1 0-4.4 1.4-5.3 3.7s-.8 6.1-.8 8.7v24c0 .9-.8 1.6-1.7 1.6h-8.8c-.9-.1-1.6-.8-1.6-1.6v-24c0-5 .8-12.5-5.4-12.5-6.3 0-6.1 7.2-6.1 12.5v24c-.1.8-.8 1.5-1.8 1.5zm163-49.3c13.1 0 20.2 11.2 20.2 25.5 0 13.8-7.8 24.8-20.2 24.8-12.8 0-19.8-11.2-19.8-25.2-.1-14.1 7-25.1 19.8-25.1zm0 9.3c-6.5 0-6.9 8.9-6.9 14.4s-.1 17.3 6.8 17.3c6.8 0 7.2-9.5 7.2-15.3 0-3.8-.2-8.4-1.3-12-1-3.2-3-4.4-5.8-4.4zm37.1 40h-8.8c-.9-.1-1.6-.8-1.6-1.6v-45.3c.1-.8.8-1.5 1.7-1.5h8.2c.8 0 1.4.6 1.6 1.3v6.9h.2c2.5-6.2 5.9-9.1 12-9.1 3.9 0 7.8 1.4 10.3 5.3 2.3 3.6 2.3 9.7 2.3 14.1v28.5c-.1.8-.8 1.4-1.7 1.4h-8.8c-.8-.1-1.5-.7-1.6-1.4v-24.6c0-5 .6-12.2-5.5-12.2-2.1 0-4.1 1.4-5.1 3.6-1.2 2.8-1.4 5.5-1.4 8.6v24.4c-.1.9-.9 1.6-1.8 1.6zm-117.5-21.6c0 3.4.1 6.3-1.6 9.4-1.4 2.5-3.6 4-6.1 4-3.4 0-5.4-2.6-5.4-6.4 0-7.5 6.7-8.9 13.1-8.9zm8.9 21.5c-.6.5-1.4.6-2.1.2-2.9-2.4-3.5-3.6-5.1-5.9-4.8 4.9-8.3 6.4-14.5 6.4-7.4 0-13.2-4.6-13.2-13.7 0-7.2 3.9-12 9.4-14.4 4.8-2.1 11.5-2.5 16.6-3.1v-1.1c0-2.1.2-4.6-1.1-6.4-1.1-1.6-3.1-2.3-4.9-2.3-3.4 0-6.4 1.7-7.1 5.3-.2.8-.7 1.6-1.5 1.6l-8.5-.9c-.7-.2-1.5-.7-1.3-1.8 2-10.4 11.3-13.5 19.7-13.5 4.3 0 9.9 1.1 13.3 4.4 4.3 4 3.9 9.4 3.9 15.2v13.7c0 4.1 1.7 5.9 3.3 8.2.6.8.7 1.8 0 2.3-1.9 1.5-5.1 4.3-6.9 5.8zm-124.4-21.5c0 3.4.1 6.3-1.6 9.4-1.4 2.5-3.6 4-6.1 4-3.4 0-5.4-2.6-5.4-6.4 0-7.5 6.7-8.9 13.1-8.9zm8.8 21.5c-.6.5-1.4.6-2.1.2-2.9-2.4-3.5-3.6-5.1-5.9-4.8 4.9-8.3 6.4-14.5 6.4-7.4 0-13.2-4.6-13.2-13.7 0-7.2 3.9-12 9.4-14.4 4.8-2.1 11.5-2.5 16.6-3.1v-1.1c0-2.1.2-4.6-1.1-6.4-1.1-1.6-3.1-2.3-4.9-2.3-3.4 0-6.4 1.7-7.1 5.3-.2.8-.7 1.6-1.5 1.6l-8.5-.9c-.7-.2-1.5-.7-1.3-1.8 2-10.4 11.3-13.5 19.7-13.5 4.3 0 9.9 1.1 13.3 4.4 4.3 4 3.9 9.4 3.9 15.2v13.7c0 4.1 1.7 5.9 3.3 8.2.6.8.7 1.8 0 2.3-1.9 1.5-5.1 4.3-6.9 5.8z" />
+                            </g>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="col">
+                      </div>
+                      <div class="col">
+                      </div>
+                      <div class="col">
+                      </div>
+                    </div>
+
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>SDE Co-Op</strong>  At Amazon Robotics, I worked on the sensor team to introduce Automotive RADAR to the Proteus Robot instead of LIDAR, implementing
+                     machine learning algorithms to filter and structure point cloud data in <code>Python</code>.  I also developed a light-weight stand-alone <code>C++</code>
+                     ROS Library to write sensor data into ROSBAGs on embedded devices.
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <div class="row" style=" width : 100%; height: 4vh; padding: 0; margin: 0;">
+                      <div class="col align-self-center" class ="img-fluid" >
+                        <a href="https://about.meta.com/">
+                          <svg height="3vh" viewBox="56.329999999999984 457.15000000000003 2387.3400000000006 1585.74"
+                            xmlns="http://www.w3.org/2000/svg" >
+                            <linearGradient id="a" gradientTransform="matrix(1 0 0 -1 0 2500)"
+                              gradientUnits="userSpaceOnUse" x1="573.85" x2="2217.65" y1="1291.09" y2="1208.07">
+                              <stop offset="0" stop-color="#0064e1" />
+                              <stop offset=".4" stop-color="#0064e1" />
+                              <stop offset=".83" stop-color="#0073ee" />
+                              <stop offset="1" stop-color="#0082fb" />
+                            </linearGradient>
+                            <linearGradient id="b" gradientTransform="matrix(1 0 0 -1 0 2500)"
+                              gradientUnits="userSpaceOnUse" x1="400.24" x2="400.24" y1="888.86" y2="1494.91">
+                              <stop offset="0" stop-color="#0082fb" />
+                              <stop offset="1" stop-color="#0064e0" />
+                            </linearGradient>
+                            <path
+                              d="M314.19 1502.88c0 91.16 20 161.14 46.16 203.48 34.29 55.46 85.43 79 137.57 79 67.24 0 128.76-16.69 247.31-180.66 95-131.42 206.89-315.89 282.19-431.54l127.52-195.93c88.58-136.07 191.11-287.33 308.67-389.86 96-83.69 199.5-130.18 303.69-130.18 174.93 0 341.55 101.37 469.07 291.49 139.56 208.21 207.3 470.48 207.3 741.12 0 160.9-31.71 279.12-85.68 372.52-52.13 90.32-153.75 180.57-324.69 180.57v-257.57c146.37 0 182.89-134.5 182.89-288.42 0-219.34-51.14-462.75-163.8-636.68-79.94-123.37-183.55-198.75-297.54-198.75-123.29 0-222.5 93-334 258.77-59.28 88.09-120.13 195.43-188.46 316.56l-75.22 133.25C1006.09 1638 967.81 1699 892.26 1799.68 759.85 1976 646.77 2042.85 497.92 2042.85c-176.59 0-288.25-76.47-357.41-191.7-56.45-93.89-84.18-217.1-84.18-357.48z"
+                              fill="#0081fb" />
+                            <path
+                              d="M259.65 766.82c118.22-182.23 288.83-309.67 484.51-309.67 113.32 0 226 33.54 343.62 129.6 128.68 105 265.83 278 436.94 563l61.35 102.25c148.11 246.74 232.37 373.68 281.69 433.54 63.42 76.87 107.84 99.79 165.54 99.79 146.37 0 182.89-134.5 182.89-288.42l227.48-7.14c0 160.9-31.71 279.12-85.68 372.52-52.13 90.32-153.75 180.57-324.69 180.57-106.27 0-200.41-23.08-304.52-121.3-80-75.38-173.6-209.29-245.58-329.67l-214.11-357.65c-107.42-179.49-206-313.32-263-373.93C944.73 795.13 865.86 716.43 740 716.43c-101.86 0-188.37 71.48-260.76 180.82z"
+                              fill="url(#a)" />
+                            <path
+                              d="M740 716.43c-101.86 0-188.37 71.48-260.76 180.82-102.37 154.5-165 384.63-165 605.63 0 91.16 20 161.14 46.16 203.48l-219.89 144.79c-56.45-93.89-84.18-217.1-84.18-357.48 0-255.29 70.07-521.37 203.32-726.85 118.22-182.23 288.83-309.67 484.51-309.67z"
+                              fill="url(#b)" />
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="col">
+                      </div>
+                      <div class="col">
+                      </div>
+                      <div class="col">
+                      </div>
+                    </div>
+
+
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>SWE Intern</strong> I worked on the Oculus Assistant team which developed the virtual assistant for the Oculus Headset.
+                    On the team, I added tracking features to the training pipelines in <code>Python</code> and developed a webapp in <code>PHP</code> and <code>React</code> to vizualize model metrics after deployment.
+                    I also worked with a reserach scientist to explore using RL Models instead of the models already in place.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+
+
+                    <div class="row" style=" width : 100%; height: 4vh; padding: 0; margin: 0;">
+                      <div class="col align-self-center">
+                        <a href="https://www.corning.com/worldwide/en.html">
+                          <svg xmlns="http://www.w3.org/2000/svg" height="2vh"
+                            viewBox="-0.01 0.146 1023.94 152.777">
+                            <path
+                              d="M77.253.147C30.973.147-.635 31.532 0 78.156c.624 45.124 28.678 74.737 74.486 74.737 26.05 0 40.202-6.904 53.852-13.84l3.271-39.256h-7.55l-2.517 8.053c-4.529 14.906-11.143 34.727-45.044 34.727-32.149 0-53.438-27.197-53.6-65.428-.312-40.554 19.7-66.936 54.858-66.936 29.805 0 38.723 18.329 42.024 37.746h7.046v-36.74C118.663 6.488 96.39.147 77.253.147zm148.218 0c-48.628 0-80.274 30.388-80.274 77.254 0 47.229 27.55 75.24 73.983 75.24 49.251 0 80.021-30.096 80.021-78.511 0-45.75-28.234-73.983-73.73-73.983zm722.715 0c-46.433 0-76.298 30.69-75.995 78.26.181 44.189 29.301 73.762 73.73 74.486 30.58.614 46.584-8.072 59.136-15.602V92.75l18.873-5.283v-6.04h-66.937v6.04l28.184 5.535V131c-9.874 7.78-21.057 12.422-37.998 11.828-30.619-.987-52.09-27.198-52.09-65.428 0-42.246 19.79-66.937 55.865-66.937 31.696 0 40.625 20.373 43.785 37.243h6.795V11.47C991.972 6.126 971.73.147 948.186.147zM300.46 3.417v6.04l23.654 5.536v122.802l-23.654 5.535v6.29h64.923v-6.038l-20.886-5.787V14.239c6.281-1.097 12.521-1.761 16.608-1.761 23.383 0 34.475 8.697 34.475 26.674 0 27.65-22.194 31.637-31.455 32.965-3.13.362-6.774.503-10.065.503v6.039l8.304 2.769 34.224 44.792c11.444 14.908 19.97 23.402 58.885 23.402h57.625v-6.291l-28.687-5.535-3.523-115.504 105.187 130.35h3.02l1.51-137.647 19.377-5.536v-6.04h-65.93v6.04l31.706 5.536 3.522 96.128L490.952 3.418h-44.54v6.039l23.905 5.536-1.006 122.802-21.39 5.284c-5.959-1.69-15.48-4.35-28.184-20.132 0 0-33.006-40.937-37.243-46.05 13.176-3.644 34.223-13.246 34.223-37.998 0-16.266-8.777-35.481-50.83-35.481H300.46zm323.108 0v6.04l23.906 5.536v122.802l-23.906 5.535v6.29h67.943v-6.29l-23.906-5.535V14.993l23.906-5.536v-6.04h-67.943zm81.532 0v6.04l23.906 5.536L728 137.795 705.1 143.33v6.29h66.685v-6.29l-28.687-5.535-3.522-115.504 105.438 130.35h2.768l1.762-137.647 19.125-5.536v-6.04h-65.93v6.04l31.706 5.536 3.523 96.128L749.641 3.419h-44.54zm-483.404 6.796c34.032 0 54.606 24.792 54.606 66.433 0 41.269-20.574 65.93-54.606 65.93-33.105 0-53.6-25.536-53.6-66.433 0-40.777 20.494-65.93 53.6-65.93z"
+                              fill="#1269a3" />
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="col">
+                      </div>
+                      <div class="col">
+                      </div>
+                    </div>
+
+
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>SWE Intern</strong> I developed a tool to automate the design and analysis of Lithography senses in <code>Matlab</code>. I collaborated with a 
+                    with the mechanical engineering team to set up a system of sensors with <code>Arduino</code> to aid in the automation of silicon wafer testing.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+
+
+                    <div class="row" style=" width : 100%; height: 4vh; padding: 0; margin: 0;">
+                      <div class="col align-self-center" height="50">
+                        <a href="https://www.levyelectric.com/">
+                          <svg preserveAspectRatio="xMidYMid meet" data-bbox="0 0 249.7 90.73" viewBox="0 0 249.7 90.73"
+                            xmlns="http://www.w3.org/2000/svg" data-type="color" role="img"
+                            aria-labelledby="comp-kbwwzuzn-svgtitle_comp-kbwwzuzn" height="3vh">
+                            <title id="comp-kbwwzuzn-svgtitle_comp-kbwwzuzn">Levy Electric Scooters Logo</title>
+                            <g>
+                              <g style="isolation:isolate">
+                                <path
+                                  d="M9 72.92c-5.73 0-9-3.13-9-8.13a15.56 15.56 0 0 1 .31-3L13.44 0h18.75L20.84 53.44a15.06 15.06 0 0 0-.21 2c0 2.19 1.14 2.91 4.06 2.91h37.5l-3.13 14.57Z"
+                                  fill="#000000" data-color="1"></path>
+                                <path
+                                  d="M84.8 72.92c-13.33 0-19.06-5.42-19.06-16.92a69.28 69.28 0 0 1 1.87-14c5-22 11.56-24.9 33-24.9 15.53 0 25.42 3.65 25.42 16.67a37.1 37.1 0 0 1-1 7.61c-1.35 6.25-4.27 9.37-11 9.37H82.82a19.15 19.15 0 0 0-.42 4c0 4.27 2.29 6.56 9.27 6.56h26.88l-2.5 11.67Zm20.63-33.44c2.91 0 3.43-2 3.75-3.33a8.45 8.45 0 0 0 .2-1.46c0-4.48-5.52-5.94-10.2-5.94-8.44 0-12.19 2.6-14 10.73Z"
+                                  fill="#000000" data-color="1"></path>
+                                <path
+                                  d="M148.34 54.17c.11.73.32 2 1 2s1.25-1.25 1.77-2l21.77-36.46h17.92l-32 49.9c-3.13 4.89-8.44 5.93-12.19 5.93s-9.17-1-10.21-5.93l-10.31-49.9H142Z"
+                                  fill="#000000" data-color="1"></path>
+                              </g>
+                              <path fill="#46dbbd" d="m218.99 64.01 30.71-46.3h-17.29L215.12 44.8l3.87 19.21z"
+                                data-color="2">
+                              </path>
+                              <path fill="#000000"
+                                d="m203.32 37.18-4.04-19.47h-16.25l13.75 55.1-12.39 17.92h16.87l9.85-14.85-7.79-38.7z"
+                                data-color="1"></path>
+                            </g>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="col">
+                      </div>
+                      <div class="col">
+                      </div>
+                    </div>
+
+
+
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Software Engineer</strong> I joined Levy as a software engineer during their early days. I had so much fun there.
+                    Being the only dedicated software engineer at the company, and having a great Manager I had creative freedom. I established
+                    the companies cloud infrastructure in <code>AWS</code> and set up the company AWS Accounts. I used lambda function  and <code>bash</code> scripts to implement
+                    business solutions to automate tasks like data migration, customer refunds, and customer background checks. The most exciting project I completed there was a feature where a stolen 
+                    scooter would stop working if you go outside of a virtual geofence ;).
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="d-flex justify-content-center" style=" padding-top: 2vh;">
+              <div class="row align-content-center">
+                <div class="col">
+                  <a href="mailto:amt297@cornell.edu" ?><i class="fa fa-envelope" style="font-size:33px;"> </i></a>
+                </div>
+                <div class="col">
+                  <a href="https://www.linkedin.com/in/3litaha/"><i class="fa fa-linkedin"
+                      style="font-size:34px; margin-left: 20vh;"> </i></a>
+                </div>
+              </div>
+            </div>
+
+
       </div>
-  </nav>
-
-  <div class="jumbotron jumbotron-fluid" style="background-color:#FFFFFF">
-    <div class="container">
-      <h1  class="display-4">Hi There!</h1>
-      <p class="lead">My name is Ali Taha I'm an Engineer who's passionate about research, interdisciplinary work, and software development. I'm detail oriented and I enjoy designing and building robust systems</p>
-      <p class="lead">Feel Free to Reach out to me!</p>
-
     </div>
-  </div>
-  <div class="d-flex justify-content-center">
-    <a href = "mailto:amt297@cornell.edu"?><i class="fa fa-envelope" style="font-size:33px;">      </i></a>
-    <a href = "https://www.linkedin.com/in/3litaha/" ><i class="fa fa-linkedin" style="font-size:34px ; margin: 0px 100px 0px 100px;"> </i></a>
-    <a href = "https://www.github.com/3liTaha" ><i class="fa fa-github" style="font-size:36px"></i> </a>
+
+
   </div>
 
 
 
 </body>
+
 </html>
